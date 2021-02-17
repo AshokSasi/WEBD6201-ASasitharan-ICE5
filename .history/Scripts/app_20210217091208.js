@@ -180,29 +180,15 @@
         {
           let contacts = JSON.parse(XHR.responseText).contacts;
           let contactData = "";
-          let contactIndex = 0;
-
           //STEP 6: Do something with the data
           for (const contact of contacts) 
           {
-            let newContact = new core.Contact();
-            newContact.fromJSON(contact);
-  
-            contactData += `<tr>
-            <th scope="row" class="text-center">${contactIndex}</th>
-            <td>${newContact.FullName}</td>
-            <td>${newContact.ContactNumber}</td>
-            <td>${newContact.EmailAddress}</td>
-            <td class="text-center"><button value="${contactIndex}" class="btn btn-primary btn-sm edit"><i class="fas fa-edit fa-sm"></i> Edit</button></td>
-            <td class="text-center"><button value="${contactIndex}" class="btn btn-danger btn-sm delete"><i class="fas fa-trash-alt fa-sm"></i> Delete</button></td>
-            </tr>`;
-  
-            contactIndex++;
+            console.log(contact);
           }
-          console.log(contactData);
         }
       });
-      
+
+
       
 
 

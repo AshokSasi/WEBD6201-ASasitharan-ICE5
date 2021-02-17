@@ -180,11 +180,12 @@
         {
           let contacts = JSON.parse(XHR.responseText).contacts;
           let contactData = "";
-          let contactIndex = 0;
 
+          let contactIndex = 0;
           //STEP 6: Do something with the data
           for (const contact of contacts) 
           {
+
             let newContact = new core.Contact();
             newContact.fromJSON(contact);
   
@@ -199,10 +200,10 @@
   
             contactIndex++;
           }
-          console.log(contactData);
         }
       });
-      
+
+
       
 
 

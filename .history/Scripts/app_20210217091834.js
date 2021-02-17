@@ -200,6 +200,7 @@
             contactIndex++;
           }
           console.log(contactData);
+
         }
       });
       
