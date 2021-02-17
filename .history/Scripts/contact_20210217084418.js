@@ -74,10 +74,6 @@
       }
     }
 
-    /**
-     * This method takes a JSON data object and assigns value to contact class properties
-     * @param {Object} data 
-     */
     fromJSON(data)
     {
       this.FullName = data.FullName;

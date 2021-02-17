@@ -1,6 +1,6 @@
 {
     "contacts":
-    [
+    {
         {
             "FullName":"Tony Stark",
             "ContactNumber":"7894561231",
@@ -16,10 +16,5 @@
             "ContactNumber":"7891234564",
             "EmailAddress":"spider@gmail.com"
         }
-        {
-            "FullName":"Guy Fieri",
-            "ContactNumber":"1234567897",
-            "EmailAddress":"flavor@gmail.com"
-        }
-    ]
+    }
 }
