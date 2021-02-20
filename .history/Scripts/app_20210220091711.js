@@ -164,6 +164,7 @@
     function displayContactList() 
     {
 
+      $("#contactListLink").addClass("active");
 
       if (localStorage.length > 0) 
       {
@@ -360,9 +361,10 @@
         });
 
         $(
-          `<li class="nav-item">
-          <a id="contactListLink" class="nav-link" aria-current="page" href="contact-list.html"><i class="fas fa-users fa-lg"></i> Contact List</a>
+          `<li id="contactListLink" class="nav-item">
+          <a class="nav-link" aria-current="page" href="contact-list.html"><i class="fas fa-users fa-lg"></i> Contact List</a>
         </li>`).insertBefore("#login");
+        
 
       }
     }
