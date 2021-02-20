@@ -163,7 +163,7 @@
 
     function displayContactList() 
     {
-
+      
       if (localStorage.length > 0) 
       {
         let contactList = document.getElementById("contactList");
@@ -275,13 +275,6 @@
     function displayLogin()
     {
 
-      //check if the user is already logged in
-      if(sessionStorage.getItem("user"))
-      {
-        //redirect to the secure area
-        location.href = "contact-list.html";
-      }
-
       let messageArea = $("#messageArea");
       messageArea.hide();
       $("#loginButton").on("click", function(){
@@ -298,7 +291,6 @@
         {
           if( username.val() == user.Username && password.val() == user.Password)
           {
-            newUser.fromJSON(user);
             success = true;
             break;
           }
@@ -309,11 +301,10 @@
         if(success)
         {
           //add user to session storage
-          sessionStorage.setItem("user", newUser.serialize());
+
           //hide the message area
           messageArea.removeAttr("class").hide();
           //redirect user to secure area
-          location.href = "contact-list.html"
 
         }
         else

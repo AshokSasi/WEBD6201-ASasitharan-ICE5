@@ -164,6 +164,8 @@
     function displayContactList() 
     {
 
+    
+      
       if (localStorage.length > 0) 
       {
         let contactList = document.getElementById("contactList");

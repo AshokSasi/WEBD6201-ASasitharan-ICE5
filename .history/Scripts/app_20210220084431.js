@@ -164,6 +164,12 @@
     function displayContactList() 
     {
 
+      if(!sessionStorage.getItem("user"))
+      {
+        //redirect to the secure area
+        location.href = "login.html";
+      }
+      
       if (localStorage.length > 0) 
       {
         let contactList = document.getElementById("contactList");

@@ -163,7 +163,7 @@
 
     function displayContactList() 
     {
-
+      
       if (localStorage.length > 0) 
       {
         let contactList = document.getElementById("contactList");
@@ -275,13 +275,6 @@
     function displayLogin()
     {
 
-      //check if the user is already logged in
-      if(sessionStorage.getItem("user"))
-      {
-        //redirect to the secure area
-        location.href = "contact-list.html";
-      }
-
       let messageArea = $("#messageArea");
       messageArea.hide();
       $("#loginButton").on("click", function(){
@@ -313,7 +306,6 @@
           //hide the message area
           messageArea.removeAttr("class").hide();
           //redirect user to secure area
-          location.href = "contact-list.html"
 
         }
         else
