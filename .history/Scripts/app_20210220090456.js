@@ -395,8 +395,7 @@
           break;
         }
 
-        // toggle login/logout
-        displayLogout();
+     
 
 
     }

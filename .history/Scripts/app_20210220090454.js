@@ -349,8 +349,7 @@
           `<a id="logout" class="nav-link" aria-current="page" href="#"><i class="fas fa-sign-in-alt fa-lg"></i> Logout</a>`
         );
 
-        $("#logout").on("click", function () 
-        {
+        $("#logout").on("click", function () {
           //perform logout
           sessionStorage.clear();
 
@@ -395,8 +394,7 @@
           break;
         }
 
-        // toggle login/logout
-        displayLogout();
+     
 
 
     }

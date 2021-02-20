@@ -337,27 +337,7 @@
 
     function displayRegister()
     {
-      
-    }
 
-    function displayLogout() {
-      //if user is logged in
-      if (sessionStorage.getItem("user")) 
-      {
-        //swap login for logout
-        $("#login").html(
-          `<a id="logout" class="nav-link" aria-current="page" href="#"><i class="fas fa-sign-in-alt fa-lg"></i> Logout</a>`
-        );
-
-        $("#logout").on("click", function () 
-        {
-          //perform logout
-          sessionStorage.clear();
-
-          // redirect back to login
-          location.href = "login.html";
-        });
-      }
     }
 
     function Start()
@@ -395,8 +375,16 @@
           break;
         }
 
-        // toggle login/logout
-        displayLogout();
+        //if user is logged in
+        if(sessionStorage.getItem("user"))
+        {
+          //swap login for logout
+          $("#login").html(
+
+            `<a class="nav-link" aria-current="page" href="#"><i class="fas fa-sign-in-alt fa-lg"></i> Logout</a>`
+
+          );
+        }
 
 
     }

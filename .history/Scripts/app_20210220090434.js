@@ -337,10 +337,6 @@
 
     function displayRegister()
     {
-      
-    }
-
-    function displayLogout() {
       //if user is logged in
       if (sessionStorage.getItem("user")) 
       {
@@ -358,6 +354,11 @@
           location.href = "login.html";
         });
       }
+    }
+
+    function displayLogout()
+    {
+
     }
 
     function Start()
@@ -395,8 +396,7 @@
           break;
         }
 
-        // toggle login/logout
-        displayLogout();
+     
 
 
     }
